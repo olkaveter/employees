@@ -15,7 +15,7 @@ const auth = async (req, res, next) => {
     req.user = user;
 
     next();
-  } catch (error  ) {
+  } catch (error) {
     res.status(401).json({ message: 'Не авторизован' });
   }
 }
