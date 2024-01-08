@@ -74,7 +74,7 @@ const remove = async (req, res) => {
 const edit = async (req, res) => {
   try {
     const data = req.body;
-    const id = data.id;
+    const { id } = req.body;
 
     await prisma.employee.update({
       where: {

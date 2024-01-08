@@ -12,6 +12,6 @@ router.post('/add', auth, add);
 // /api/employees/remove/:id
 router.post('/remove/:id', auth, remove);
 // /api/employees/edit/:id
-router.post('/edit', auth, edit);
+router.put("/edit/:id", auth, edit);
 
 module.exports = router;
